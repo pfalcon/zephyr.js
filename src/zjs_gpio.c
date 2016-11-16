@@ -450,7 +450,9 @@ jerry_value_t zjs_gpio_init()
         zjs_gpio_dev[i] = device_get_binding(devname);
         if (!zjs_gpio_dev[i]) {
             ERR_PRINT("DEVICE: %s\n", devname);
-            return zjs_error("zjs_gpio_init: cannot find GPIO device");
+// Assumption that GPIO_0 and friends exist is wrong and no wonder that it
+// fails. When this happens, it's not fatal.
+//            return zjs_error("zjs_gpio_init: cannot find GPIO device");
         }
     }
 
