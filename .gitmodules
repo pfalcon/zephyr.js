@@ -1,6 +1,7 @@
 [submodule "deps/zephyr"]
 	path = deps/zephyr
-	url = https://gerrit.zephyrproject.org/r/zephyr
+	url = https://git.linaro.org/lite/zephyr.git
+	branch = aeolus-2016.12
 [submodule "deps/jerryscript"]
 	path = deps/jerryscript
 	url = https://github.com/jerryscript-project/jerryscript.git
