@@ -1,3 +1,16 @@
+This branch contains a quick sample/instructions to quickly start with
+Z.js on 96Boards Carbon board (which is NOT an officially supported target
+in the Z.js mainline). To build for Carbon, follow environment setup
+instructions below, and execute:
+
+    make BOARD=96b_carbon JS=samples/arduino/basics/Blink-96b_carbon.js
+
+This will build a binary with an LED blink sample. Flash it following
+the official Carbon instructions. The expected outcome is slow blinking
+of the top green LED on the board.
+
+----------------------
+
 # JavaScript\* Runtime for Zephyr&trade; OS
 
 The JavaScript\* Runtime for the Zephyr&trade; OS project (ZJS for short) provides an IoT
